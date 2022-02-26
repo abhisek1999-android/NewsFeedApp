@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "117355173304",
+    "project_id": "newsfeedapp-b683e",
+    "storage_bucket": "newsfeedapp-b683e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117355173304:android:9d8d465196aeea6f57eb4d",
+        "android_client_info": {
+          "package_name": "com.abhisekseal.enno2020mscs001.curaj.newsfeedapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117355173304-i2r6ph41uveenopphlrihe6mn61fi0u1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBIjpcSFXNsAv7fVFSRZwy3CaFu4ksEvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117355173304-i2r6ph41uveenopphlrihe6mn61fi0u1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

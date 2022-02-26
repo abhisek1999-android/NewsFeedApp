@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LogInRegister"
+    android:background="#e4e4e4"
+    >
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/custom_tool_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_border"
+        android:id="@+id/signLogLayout"
+        android:elevation="0dp"
+
+        >
+
+        <RadioGroup
+            android:id="@+id/loginRegGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/logIn"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:button="@android:color/transparent"
+                android:background="@drawable/login_reg_selector"
+                android:textColor="@drawable/text_color_select"
+                android:fontFamily="@font/poppins"
+                android:text="Login" />
+            <RadioButton
+                android:id="@+id/reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:fontFamily="@font/poppins"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:button="@android:color/transparent"
+                android:background="@drawable/login_reg_selector"
+                android:textColor="@drawable/text_color_select"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/signLogLayout"
+    android:layout_above="@id/actionButton"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <!--login-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        style="@style/card_bg"
+        android:layout_below="@id/signLogLayout"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SignIn into your \nAccount"
+                android:textSize="25sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/pink_700"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/emailLogin"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins"
+                    android:drawableRight="@drawable/ic_baseline_email_24"
+                    android:drawableTint="@color/pink_500"
+                    android:hint="Email id" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/passwordLogin"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Password"
+                    android:fontFamily="@font/poppins"
+                    android:drawableRight="@drawable/ic_baseline_lock_24"
+                    android:drawableTint="@color/pink_500"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/forgotPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:fontFamily="@font/poppins"
+                android:textAlignment="viewEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/pink_500"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="2dp"
+                android:background="#C8C0C0" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Login with "
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:fontFamily="@font/poppins"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/view"
+                android:textAlignment="center"
+                android:layout_marginTop="-10dp"
+
+                android:textSize="12sp"
+                />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic__google"
+                    android:layout_margin="10dp"
+                    android:id="@+id/googleLogin"
+
+                    />
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic__facebook"
+                    android:layout_margin="10dp"
+                    android:id="@+id/faceBookLogin"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_now"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:paddingBottom="50dp"
+                android:id="@+id/regNowText"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+<!--Register-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        style="@style/card_bg"
+        android:layout_below="@id/signLogLayout"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create an \nAccount"
+                android:textSize="25sp"
+                android:fontFamily="@font/poppins"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/pink_700"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/personName"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Your Name"
+                    android:drawableRight="@drawable/ic_baseline_person_24"
+                    android:drawableTint="@color/pink_500"
+                    android:fontFamily="@font/poppins"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/emailSignup"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Email id"
+                    android:fontFamily="@font/poppins"
+                    android:drawableRight="@drawable/ic_baseline_email_24"
+                    android:drawableTint="@color/pink_500"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                >
+
+
+                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccp_defaultNameCode="IN"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+
+                    />
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/userPhone"
+
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Phone"
+                        android:fontFamily="@font/poppins"
+                        android:drawableRight="@drawable/ic_baseline_phone_24"
+                        android:drawableTint="@color/pink_500"
+                        android:inputType="phone"
+                        />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/passwordSignup"
+                android:layout_marginTop="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Password"
+                    android:fontFamily="@font/poppins"
+                    android:drawableRight="@drawable/ic_baseline_lock_24"
+                    android:drawableTint="@color/pink_500"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <CheckedTextView
+                android:id="@+id/termsAndCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms"
+                android:fontFamily="@font/poppins"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+                />
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_now"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"
+                android:id="@+id/loginNowText"
+
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/actionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bg"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

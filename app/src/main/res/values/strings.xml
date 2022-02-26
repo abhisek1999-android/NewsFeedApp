@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NewsFeedApp</string>
+
+    <string name="api_key">25329bcc8c39480f9a70307e3980b6d8</string>
+    <string name="reg_now">Don\'t have an Account? <font color="#F44336">Register Now</font></string>
+    <string name="login_now">Already Have an Account? <font color="#F44336">Login Now</font></string>
+    <string name="terms">I agree with <u> <font color="#F44336">terms &amp; conditions</font></u></string>
+
+    <string name="facebook_app_id">372599501035415</string>
+    <string name="fb_login_protocol_scheme">fd7681378ac2d696b69c14f1095c65b7</string>
+    <string name="facebook_client_token">90e7ed5413eded4cda9bb7182608b4ac</string>
+
+
+</resources>

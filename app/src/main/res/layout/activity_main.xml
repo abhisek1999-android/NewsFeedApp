@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/pink_500"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink_500"
+        android:hint="Search Here"
+        android:id="@+id/searchContent"
+        android:fontFamily="@font/poppins"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawablePadding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableTint="@color/white"
+        android:padding="15dp"
+        android:layout_weight="1"
+        />
+<ImageButton
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/ic_baseline_logout_24"
+    android:id="@+id/logOut"
+    android:layout_weight="7"
+    android:onClick="logOut"
+    android:background="@color/transparent"
+    />
+</LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/newsRecyclerView"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>
