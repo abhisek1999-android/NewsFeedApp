@@ -5,6 +5,22 @@ This app is capable of searching and displaying news from
 
 https://user-images.githubusercontent.com/67363661/155868176-58e794a5-ab32-41cf-991e-33de3220e821.mp4
 
+# Screenshots
+
+## Login & Register
+
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/67363661/155890060-7b19cab5-7382-40e0-bfdb-8b854e6fa7d3.jpeg" width="320" height="640" />
+ <img src="https://user-images.githubusercontent.com/67363661/155890071-e028d1fe-5827-4592-9651-ddc092040b33.jpeg" width="320" height="640" />
+</p>
+
+
+## NewsFeed
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/67363661/155890116-5bd57d75-d5b3-4543-b4cf-c029035ab99e.jpeg" width="320" height="640" />
+ <img src="https://user-images.githubusercontent.com/67363661/155890120-374724ee-6b27-4566-aa48-25f8bb1a8081.jpeg" width="320" height="640" />
+</p>
+
 
 # Libraries used
 
