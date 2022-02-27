@@ -140,6 +140,7 @@ public class LogInRegister extends AppCompatActivity {
             forgotPass();
         });
     }
+    //THIS METHOD IS USED FOR FORGOT PASSWORD
 
     private void forgotPass(){
 
@@ -162,6 +163,7 @@ public class LogInRegister extends AppCompatActivity {
         }
     }
 
+    //THIS METHOD IS USED TO SWITCH BETWEEN SIGNUP AND LOGIN.................................
     private void changeLayout(String selectedLabel) {
 
         if (selectedLabel.equals("Login")){
@@ -176,7 +178,7 @@ public class LogInRegister extends AppCompatActivity {
         }
 
     }
-
+// METHOD FOR LOGIN USER..............................................
     private void login(){
 
         if (!emailLogin.getEditText().getText().toString().equals("") && emailLogin.getEditText().getText().toString().matches(emailPattern))
@@ -226,7 +228,7 @@ public class LogInRegister extends AppCompatActivity {
             });
         }
     }
-
+    // METHOD FOR CREATING USER..............................................
     private void createAccount() {
 
       customProgressDialogue.show();

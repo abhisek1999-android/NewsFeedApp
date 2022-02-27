@@ -42,7 +42,6 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
     @Override
     public MyViewHoder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
         // Inflate the layout
@@ -69,12 +68,6 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
             e.printStackTrace();
         }
         holder.source.setText(list.get(position).getSource());
-
-
-
-
-
-
         holder.description.setText(list.get(position).getDescription());
         Glide.with(context).load(list.get(position).getImage()).placeholder(R.drawable.ic_baseline_image_24).into(holder.imageNews);
     }
