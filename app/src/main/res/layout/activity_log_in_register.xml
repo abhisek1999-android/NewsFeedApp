@@ -144,6 +144,7 @@
                     android:fontFamily="@font/poppins"
                     android:drawableRight="@drawable/ic_baseline_lock_24"
                     android:drawableTint="@color/pink_500"
+                    android:inputType="textPassword"
                     />
 
 
@@ -242,7 +243,7 @@
         app:cardCornerRadius="10dp"
         android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         style="@style/card_bg"
         android:layout_below="@id/signLogLayout"
         android:layout_centerInParent="true"
@@ -359,6 +360,7 @@
                         android:drawableRight="@drawable/ic_baseline_phone_24"
                         android:drawableTint="@color/pink_500"
                         android:inputType="phone"
+                        android:maxLength="10"
                         />
 
 
@@ -385,6 +387,7 @@
                     android:fontFamily="@font/poppins"
                     android:drawableRight="@drawable/ic_baseline_lock_24"
                     android:drawableTint="@color/pink_500"
+                    android:inputType="textPassword"
                     />
 
 

@@ -76,7 +76,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
 
 
         holder.description.setText(list.get(position).getDescription());
-        Glide.with(context).load(list.get(position).getImage()).into(holder.imageNews);
+        Glide.with(context).load(list.get(position).getImage()).placeholder(R.drawable.ic_baseline_image_24).into(holder.imageNews);
     }
 
     @Override
