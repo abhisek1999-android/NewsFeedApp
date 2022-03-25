@@ -6,6 +6,17 @@ public class News {
     String publishedAt;
     String source;
     String image;
+    String url;
+
+
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
     public News(){
 
@@ -51,11 +62,12 @@ public class News {
         this.image = image;
     }
 
-    public News(String title, String description, String publishedAt, String source, String image) {
+    public News(String title, String description, String publishedAt, String source, String image,String url) {
         this.title = title;
         this.description = description;
         this.publishedAt = publishedAt;
         this.source = source;
         this.image = image;
+        this.url = url;
     }
 }

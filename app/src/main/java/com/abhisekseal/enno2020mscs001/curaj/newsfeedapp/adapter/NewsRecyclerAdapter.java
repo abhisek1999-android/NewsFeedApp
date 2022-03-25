@@ -1,6 +1,8 @@
 package com.abhisekseal.enno2020mscs001.curaj.newsfeedapp.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +16,7 @@ import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.abhisekseal.enno2020mscs001.curaj.newsfeedapp.Bean.News;
+import com.abhisekseal.enno2020mscs001.curaj.newsfeedapp.CompleteNews;
 import com.abhisekseal.enno2020mscs001.curaj.newsfeedapp.R;
 import com.bumptech.glide.Glide;
 
@@ -51,7 +54,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
 
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHoder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHoder holder, @SuppressLint("RecyclerView") int position) {
 
         holder.title.setText(list.get(position).getTitle());
         holder.source.setText(list.get(position).getSource());
@@ -70,6 +73,14 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
         holder.source.setText(list.get(position).getSource());
         holder.description.setText(list.get(position).getDescription());
         Glide.with(context).load(list.get(position).getImage()).placeholder(R.drawable.ic_baseline_image_24).into(holder.imageNews);
+        holder.mView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, CompleteNews.class);
+                intent.putExtra("url",list.get(position).getUrl());
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

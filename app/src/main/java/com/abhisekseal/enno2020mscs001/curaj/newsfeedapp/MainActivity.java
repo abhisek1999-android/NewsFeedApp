@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                         for (Article result:response.getArticles()){
 
                             listFinal.add(new News(result.getTitle(),result.getDescription(),
-                                    result.getPublishedAt(),result.getSource().getName(),result.getUrlToImage()));
+                                    result.getPublishedAt(),result.getSource().getName(),result.getUrlToImage(),result.getUrl()));
 
                             newsRecyclerAdapter=new NewsRecyclerAdapter(listFinal,MainActivity.this);
                             newsRecyclerView.setAdapter(newsRecyclerAdapter);
